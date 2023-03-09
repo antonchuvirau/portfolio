@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
-
+:root {
+  --animate-duration: 1800ms;
+}
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -30,14 +32,15 @@ body {
 
 .home__content-article-title-name {
   transform: translateX(-200%);
-  animation: slideInAnimLeft 1s ease-out forwards;
-  will-change: transform;
+  /* animation: slideInAnimLeft 1s ease-out forwards;
+  will-change: transform; */
 }
 
 .home__content-article-title-surname {
+  animation-delay: .5s;
   transform: translateX(-200%);
-  animation: slideInAnimLeft 2s ease-out forwards;
-  will-change: transform;
+  /* animation: slideInAnimLeft 2s ease-out forwards;
+  will-change: transform; */
 }
 
 .home__content-article-subtitle {
