@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="home">
+      <div class="home_main">
+        <header class="home__header">
+          <nav class="home__header-navigation">
+            <a href="/src/pages/About/index.html">About</a>
+            <a href="#">Commercials</a>
+            <a href="/src/pages/Portfolio/">Portfolio</a>
+            <a href="#">Life</a>
+            <a href="/src/pages/Editorials/index.html">Editorials</a>
+            <a href="/src/pages/Booking/index.html">Booking</a>
+          </nav>
+        </header>
+        <main class="home__content">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div style="background: #333;" class="swiper-slide swiper-slide-desktop">
+                <img src="/assets/portfolio_dasha.png" />
+                <section class="home__content-article">
+                  <div class="home__content-article-title">
+                    <p class="home__content-article-title-name">Dasha</p>
+                    <p class="home__content-article-title-surname">Popova</p>
+                  </div>
+                  <a href="#" class="home__content-article-subtitle"
+                    >Commercials</a
+                  >
+                </section>
+              </div>
+              <div style="background: #333;" class="swiper-slide swiper-slide-desktop">
+                <img src="/assets/portfolio_dasha_second.png" />
+                <section class="home__content-article">
+                  <div class="home__content-article-title">
+                    <p class="home__content-article-title-name">Dasha</p>
+                    <p class="home__content-article-title-surname">Popova</p>
+                  </div>
+                  <a
+                    href="/src/pages/Portfolio/"
+                    class="home__content-article-subtitle"
+                    >Portfolio</a
+                  >
+                </section>
+              </div>
+              <div style="background: #333;" class="swiper-slide swiper-slide-mobile">
+                <img src="#" />
+                <section class="home__content-article">
+                  <div class="home__content-article-title">
+                    <p class="home__content-article-title-name">Dasha</p>
+                    <p class="home__content-article-title-surname">Popova</p>
+                  </div>
+                  <a href="#" class="home__content-article-subtitle"
+                    >Portfolio</a
+                  >
+                </section>
+              </div>
+              <div style="background: #333;" class="swiper-slide swiper-slide-mobile">
+                <img src="#" />
+                <section class="home__content-article">
+                  <div class="home__content-article-title">
+                    <p class="home__content-article-title-name">Dasha</p>
+                    <p class="home__content-article-title-surname">Popova</p>
+                  </div>
+                  <a href="#" class="home__content-article-subtitle"
+                    >Portfolio</a
+                  >
+                </section>
+              </div>
+            </div>
+          </div>
+          
+        </main>
+        <footer class="home__footer">
+          <p>Copyright 2023</p>
+          <div>
+            Site by
+            <a href="#">logic</a>
+          </div>
+        </footer>
+      </div>
+      <div class="home__menu hidden" id="menu">
+        <header class="home__menu-header">
+          <p class="home__menu-header-name">Dasha Popova</p>
+        </header>
+        <nav class="home__menu-nav">
+          <a href="/src/pages/About/index.html">About</a>
+          <a href="#">Commercials</a>
+          <a href="/src/pages/Portfolio/">Portfolio</a>
+          <a href="#">Life</a>
+          <a href="/src/pages/Editorials/index.html">Editorials</a>
+          <a href="/src/pages/Booking/index.html">Booking</a>
+        </nav>
+      </div>
+      <aside class="home__aside"></aside>
+    </div>
+    <button
+      id="menuButtonOpen"
+      class="home__aside-button disabled"
+      type="button"
+    >
+      <span></span>
+      <span></span>
+    </button>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

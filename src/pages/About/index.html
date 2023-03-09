@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>About</title>
+  </head>
+  <body>
+    <div class="about">
+      <header class="about__header" data-aos="fade">
+        <a class="about__header-link" href="/index.html">Dasha Popova</a>
+        <nav class="about__header-navigation">
+          <a href="/src/pages/About/index.html"><b>About</b></a>
+          <a href="#">Commercials</a>
+          <a href="/src/pages/Portfolio/">Portfolio</a>
+          <a href="#">Life</a>
+          <a href="/src/pages/Editorials/index.html">Editorials</a>
+          <a href="/src/pages/Booking/index.html">Booking</a>
+        </nav>
+      </header>
+      <section class="about__content">
+        <main class="about__content">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/assets/fmborodin_0076.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/fmborodin_0069.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="about__content-main">
+            <article class="about__content-description" data-aos="fade-up">
+              <p class="about__content-description-title">About</p>
+              <p class="about__content-description-text">
+                Russian supermodel and actress. She is the first Russian model
+                to appear on the cover of VOGUE. Russian supermodel and actress.
+                She is the first Russian model to appear on the cover of VOGUE.
+              </p>
+            </article>
+            <section class="about__content-params">
+              <div class="about__content-params-item" data-aos="fade-up">
+                <p class="about__content-params-item-name">AGE</p>
+                <p class="about__content-params-item-value">31</p>
+              </div>
+              <div class="about__content-params-item" data-aos="fade-up">
+                <p class="about__content-params-item-name">DRESS SIZE</p>
+                <p class="about__content-params-item-value">S</p>
+              </div>
+              <div class="about__content-params-item" data-aos="fade-up">
+                <p class="about__content-params-item-name">HEIGHT</p>
+                <p class="about__content-params-item-value">180</p>
+              </div>
+              <div class="about__content-params-item" data-aos="fade-up">
+                <p class="about__content-params-item-name">SHOE SIZE</p>
+                <p class="about__content-params-item-value">41</p>
+              </div>
+              <div class="about__content-params-item" data-aos="fade-up">
+                <p class="about__content-params-item-name">EYES</p>
+                <p class="about__content-params-item-value">GREEN</p>
+              </div>
+              <div class="about__content-params-item" data-aos="fade-up">
+                <p class="about__content-params-item-name">BUST-WAIST-HIPS</p>
+                <p class="about__content-params-item-value">88-67-98</p>
+              </div>
+              <div class="about__content-params-item" data-aos="fade-up">
+                <p class="about__content-params-item-name">HAIR COLOUR</p>
+                <p class="about__content-params-item-value">BLONDE</p>
+              </div>
+            </section>
+            <div class="about__content-booking_wrapper">
+              <button
+                data-aos="fade-up"
+                onclick="location.href='../Booking/index.html';"
+                type="button"
+                class="about__content-booking"
+                data-aos-offset="0"
+              >
+                BOOKING
+              </button>
+            </div>
+          </div>
+        </main>
+      </section>
+      <footer class="about__footer" data-aos-offset="0" data-aos="fade">
+        <p>Copyright 2023</p>
+        <div>
+          Site by
+          <a href="#">logic</a>
+        </div>
+      </footer>
+      <aside class="about_aside" data-aos="fade">
+        <a href="/">Dasha Popova</a>
+      </aside>
+      <div class="about__menu hidden" id="menu">
+        <header class="about__menu-header">
+          <a href="/" class="about__menu-header-name">Dasha Popova</a>
+        </header>
+        <nav class="about__menu-nav">
+          <a href="/src/pages/About/index.html"><b>About</b></a>
+          <a href="#">Commercials</a>
+          <a href="/src/pages/Portfolio/">Portfolio</a>
+          <a href="#">Life</a>
+          <a href="/src/pages/Editorials/index.html">Editorials</a>
+          <a href="/src/pages/Booking/index.html">Booking</a>
+        </nav>
+      </div>
+    </div>
+    <button
+      id="menuButtonOpen"
+      class="about__aside-button disabled"
+      type="button"
+    >
+      <span></span>
+      <span></span>
+    </button>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      AOS.init();
+      const swiper = new Swiper('.mySwiper', {
+        centeredSlides: true,
+        noSwiping: true,
+        noSwipingClass: 'swiper-slide',
+        effect: 'fade',
+        fadeEffect: { crossFade: true },
+        speed: 3000,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: true,
+        },
+      });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

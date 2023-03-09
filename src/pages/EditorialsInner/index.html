@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Editorials</title>
+  </head>
+  <body>
+    <div class="editorials-inner">
+      <header class="editorials-inner__header" data-aos="fade">
+        <a class="editorials-inner__header-link" href="/index.html"
+          >dasha popova</a
+        >
+        <nav class="editorials-inner__header-navigation">
+          <a href="../About/index.html">About</a>
+          <a href="#">Commercials</a>
+          <a href="/src/pages/Portfolio/">Portfolio</a>
+          <a href="#">Life</a>
+          <a href="/src/pages/Editorials/"><b>Editorials</b></a>
+          <a href="/src/pages/Booking/">Booking</a>
+        </nav>
+      </header>
+      <section class="editorials-inner__content">
+        <div>
+          <p class="editorials-inner__content-item-name" data-aos="fade-up">
+            cosmopolitan russia
+          </p>
+          <p class="editorials-inner__content-item-type" data-aos="fade-up">
+            editorial
+          </p>
+          <p class="editorials-inner__content-item-date" data-aos="fade-up">
+            April 2022
+          </p>
+        </div>
+        <div
+          class="editorials-inner__content-item"
+              data-aos-duration="1500"
+          data-aos="fade-up"
+        >
+          <img src="../../../assets/cosmo_Cosmopoli.png" alt="" />
+          <img src="../../../assets/cosmo_Cosmopol.png" alt="" />
+          <img
+            src="../../../assets/cosmo_Cosmopol.png"
+            class="editorials-inner__content-last-image fourth"
+            alt=""
+          />
+        </div>
+
+        <article class="editorials-inner__article" data-aos="fade-up">
+          <p class="editorials-inner__article-title">
+            How do you define your style?
+          </p>
+          <p class="editorials-inner__article-text">
+            My style is a style of a mood, feeling like my going out today
+            depends on a place where I am going to be today and a situation. In
+            one look I usually match several different styles which makes it
+            complex and interesting. To a feminine look I add coarse male
+            garment pieces. A sports look I soften by using some casual items.
+            And of course it’s very important to make you look your best by
+            choosing the suitable style.
+          </p>
+        </article>
+        <article class="editorials-inner__article" data-aos="fade-up">
+          <p class="editorials-inner__article-title">
+            The creative concept for this editorial is “cinema etiquette”. How
+            does cinema influence you?
+          </p>
+          <p class="editorials-inner__article-text last">
+            Cinema has always played an important role in my life. And pretty
+            much since my childhood it has brought lots of ideas, broad visual
+            experience and looks to the style, especially retro cinema.
+            Particularly from this type of cinema I’ve learnt how beautiful the
+            woman is who stands out from the crowd by her individuality but at
+            the same time harmonizes with the general environment. Watching the
+            scenes from “Pretty Woman”, “Wild Orchid”, “Madly in Love/
+            Innamorato pazzo”, “The Devil Wears Prada”, “Gia” and many other
+            movies over and over again inspires me first of all with ease,
+            self-sufficiency and confidence of the main characters. For me this
+            is the style.
+          </p>
+        </article>
+        <a href="/src/pages/Editorials/" class="editorials-inner__back-link"
+          >BACK TO EDITORIALS</a
+        >
+        <footer
+          data-aos-offset="0"
+          data-aos="fade"
+          class="editorials-inner__footer"
+        >
+          <p>Copyright 2023</p>
+          <div>
+            Site by
+            <a href="#">logic</a>
+          </div>
+        </footer>
+      </section>
+      <aside data-aos="fade" class="editorials-inner_aside">
+        <a href="/">Dasha Popova</a>
+      </aside>
+      <div class="editorials-inner__menu hidden" id="menu">
+        <header class="editorials-inner__menu-header">
+          <a href="/" class="editorials-inner__menu-header-name">Dasha Popova</a>
+        </header>
+        <nav class="editorials-inner__menu-nav">
+          <a href="/src/pages/About/index.html">About</a>
+          <a href="#">Commercials</a>
+          <a href="/src/pages/Portfolio/">Portfolio</a>
+          <a href="#">Life</a>
+          <a href="/src/pages/Editorials/index.html"><b>Editorials</b></a>
+          <a href="/src/pages/Booking/index.html">Booking</a>
+        </nav>
+      </div>
+    </div>
+    <button
+      id="menuButtonOpen"
+      class="editorials-inner__aside-button disabled"
+      type="button"
+    >
+      <span></span>
+      <span></span>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script>
+      AOS.init();
+      const swiper = new Swiper('.mySwiper', {
+        centeredSlides: true,
+        noSwiping: true,
+        noSwipingClass: 'swiper-slide',
+        effect: 'fade',
+        fadeEffect: { crossFade: true },
+        speed: 1700,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+        },
+      });
+    </script>
+  </body>
+</html>
