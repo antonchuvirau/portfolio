@@ -31,17 +31,20 @@ body {
 .home__content-article-title-name {
   transform: translateX(-200%);
   animation: slideInAnimLeft 1s ease-out forwards;
+  will-change: transform;
 }
 
 .home__content-article-title-surname {
   transform: translateX(-200%);
   animation: slideInAnimLeft 2s ease-out forwards;
+  will-change: transform;
 }
 
 .home__content-article-subtitle {
   transform: translateX(-200%);
   animation: slideInAnimLeft 2.5s ease-out forwards;
   text-decoration: none;
+  will-change: transform;
 }
 
 .swiper-slide-active img {
